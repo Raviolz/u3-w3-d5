@@ -3,6 +3,7 @@ import AMFooter from "./Components/AMFooter.jsx"
 import AMNavBar from "./Components/AMNavBar.jsx"
 import AMSideBar from "./Components/AMSideBar.jsx"
 import AMHomepage from "./Components/AMHomepage.jsx"
+import { Container } from "react-bootstrap"
 
 function App() {
   return (
@@ -11,9 +12,9 @@ function App() {
         <AMSideBar />
         <div className="min-vh-100 d-flex flex-column am-main">
           <AMNavBar />
-          <div className="am-page">
+          <Container fluid className="am-page">
             <AMHomepage />
-          </div>
+          </Container>
           <AMFooter />
         </div>
       </div>

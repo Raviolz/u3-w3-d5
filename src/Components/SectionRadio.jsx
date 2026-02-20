@@ -27,7 +27,7 @@ const SectionRadio = () => {
   ]
 
   return (
-    <Container className="mt-4">
+    <Container fluid className="mt-4">
       <Row className="mb-2">
         <Col>
           <div className="d-flex align-items-center gap-2">
@@ -39,9 +39,9 @@ const SectionRadio = () => {
         </Col>
       </Row>
 
-      <Row className="g-3">
+      <Row className="g-3 flex-nowrap  overflow-hidden overflow-md-visible">
         {episodes.map((episode, index) => (
-          <Col key={index} xs={6} sm={4} md={3} lg={2}>
+          <Col key={index} xs={6} md={3} lg={2}>
             <SingleRadioEpisode image={episode.image} title={episode.title} />
           </Col>
         ))}

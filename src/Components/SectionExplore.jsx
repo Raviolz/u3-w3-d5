@@ -15,12 +15,12 @@ const SectionExplore = () => {
   ]
 
   return (
-    <Container className="mt-4">
+    <Container fluid className="mt-4">
       <h6 className="text-white mb-3">Altro da esplorare</h6>
 
       <Row className="g-3">
         {labels.map((label) => (
-          <Col key={label} xs={12} sm={6} lg={4}>
+          <Col key={label} xs={12} md={6} lg={4}>
             <SingleExploreLabel label={label} />
           </Col>
         ))}

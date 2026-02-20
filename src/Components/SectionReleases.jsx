@@ -37,11 +37,21 @@ const SectionReleases = () => {
       </div>
 
       <Row className="g-3 row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
-        {releases.map((release) => (
-          <Col key={release.id}>
-            <SingleRelease title={release.title} artist={release.artist.name} image={release.album.cover_medium} />
-          </Col>
-        ))}
+        {releases.map((release, index) => {
+          let responsiveClass = ""
+
+          if (index >= 8) {
+            responsiveClass = "d-none d-lg-block"
+          } else if (index >= 6) {
+            responsiveClass = "d-none d-md-block"
+          }
+
+          return (
+            <Col key={release.id} className={responsiveClass}>
+              <SingleRelease title={release.title} artist={release.artist.name} image={release.album.cover_medium} />
+            </Col>
+          )
+        })}
       </Row>
     </section>
   )

@@ -2,8 +2,8 @@ import { Navbar, Container, Form, InputGroup, Nav } from "react-bootstrap"
 
 const AMSideBar = () => {
   return (
-    <aside className="am-sidebar bg-dark text-white border-end">
-      <Container fluid className="py-3">
+    <aside className="am-sidebar bg-dark text-white border-end d-none d-lg-block">
+      <Container fluid className="py-3 ">
         {/* Brand */}
         <Navbar.Brand className="d-flex align-items-center gap-2 mb-3 text-white">
           <img src="/logos/music.svg" alt="Apple Music" />
