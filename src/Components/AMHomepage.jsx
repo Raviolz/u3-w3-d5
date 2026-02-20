@@ -1,7 +1,13 @@
+import SectionExplore from "./SectionExplore"
+import SectionNews from "./SectionNews"
+import SectionRadio from "./SectionRadio"
+
 const AMHomepage = () => {
   return (
     <>
-      <div>test</div>
+      <SectionNews />
+      <SectionRadio />
+      <SectionExplore />
     </>
   )
 }
