@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap"
 function App() {
   return (
     <>
-      <div className="am-layout">
+      <div className="am-layout ">
         <AMSideBar />
         <div className="min-vh-100 d-flex flex-column am-main">
           <AMNavBar />

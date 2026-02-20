@@ -45,11 +45,12 @@ const AMNavBar = () => {
                 <i className="bi bi-volume-up text-white-50" />
                 <Form.Range aria-label="Volume" />
               </div>
-
-              <Button variant="danger" size="sm" className="px-3 d-flex gap-2">
-                <i className="bi bi-person-fill"></i>
-                Accedi
-              </Button>
+              <div id="btn-nav ">
+                <Button variant="danger" size="sm" className="px-3 d-flex gap-2 btn-custom-red me-5">
+                  <i className="bi bi-person-fill"></i>
+                  Accedi
+                </Button>
+              </div>
               <Button variant="link" className="text-white d-md-none">
                 <i className="bi bi-list fs-4"></i>
               </Button>
@@ -87,9 +88,9 @@ const AMNavBar = () => {
           </div>
 
           {/* DESTRA */}
-          <Button variant="link" className="text-danger">
-            Accedi
-          </Button>
+          <div id="btn-nav">
+            <Button className="btn-custom-red">Accedi</Button>
+          </div>
         </Container>
       </Navbar>
     </>

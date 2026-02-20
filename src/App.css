@@ -32,3 +32,17 @@
 .btn-section-explore {
   border-radius: 10px;
 }
+
+#btn-nav button.btn.btn-custom-red {
+  background-color: #eb2f45;
+
+  color: #ffffff;
+}
+
+#AMNlogo {
+  filter: invert(100%) brightness(200%);
+}
+
+#AMNlogo2 {
+  filter: invert(100%) brightness(200%);
+}

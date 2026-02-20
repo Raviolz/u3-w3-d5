@@ -6,7 +6,7 @@ const AMSideBar = () => {
       <Container fluid className="py-3 ">
         {/* Brand */}
         <Navbar.Brand className="d-flex align-items-center gap-2 mb-3 text-white">
-          <img src="/logos/music.svg" alt="Apple Music" />
+          <img src="/logos/music.svg" alt="Apple Music" id="AMNlogo2" />
         </Navbar.Brand>
 
         {/* Search */}

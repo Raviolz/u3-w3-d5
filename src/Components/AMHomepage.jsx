@@ -5,12 +5,12 @@ import SectionReleases from "./SectionReleases"
 
 const AMHomepage = () => {
   return (
-    <>
+    <div className="my-5 mx-3 ">
       <SectionNews />
       <SectionRadio />
       <SectionReleases />
       <SectionExplore />
-    </>
+    </div>
   )
 }
 
